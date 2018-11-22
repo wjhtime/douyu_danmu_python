@@ -32,6 +32,7 @@ def send_req_msg(msgstr):
         int.to_bytes(code, 4, 'little')
     client.send(msgHead)
     sent = 0
+
     while sent < len(msg):
         tn = client.send(msg[sent:])
         sent = sent + tn
@@ -99,7 +100,6 @@ def signal_handler(signal, frame):
 
 if __name__ == '__main__':
     #room_id = input('请输入房间ID： ')
-
     # lpl
     room_id = 288016
     # 开启signal捕捉

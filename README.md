@@ -24,3 +24,4 @@ python3 danmu.py
 ## License
 
 [MIT](https://github.com/wjhtime/douyu_danmu/blob/master/LICENSE)
+
